@@ -49,7 +49,6 @@ const PopupsDraw = () => {
 						<Suspense fallback={<div>loading...</div>} key={item.id}>
 							<BasicPopup
 								title={item.title}
-								children={item.content}
 								refEl={item.elementRef}
 								height={item.position.height}
 								width={item.position.width}
@@ -58,13 +57,14 @@ const PopupsDraw = () => {
 								onClose={closePopup}
 								onMouseDown={mouseDown}
 								onClick={onClickPopup}
-							/>
+							>
+								{item.content}
+							</BasicPopup>
 						</Suspense>
 					) : (
 						<StatusPopup
 							key={item.id}
 							title={item.title}
-							children={item.content}
 							refEl={item.elementRef}
 							height={item.position.height}
 							width={item.position.width}
@@ -74,7 +74,9 @@ const PopupsDraw = () => {
 							onMouseDown={mouseDown}
 							onClick={onClickPopup}
 							status="success"
-						/>
+						>
+							{item.content}
+						</StatusPopup>
 					)
 				)}
 			</div>
