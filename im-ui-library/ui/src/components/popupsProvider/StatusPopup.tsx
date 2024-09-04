@@ -10,8 +10,6 @@ interface Props extends PopupsProviderProps {
 }
 
 const StatusPopup = (props: Props) => {
-	console.log('render status popups')
-
 	const handleClick = () => {
 		if (props?.onClick) {
 			props?.onClick(props.refEl)
