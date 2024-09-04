@@ -21,6 +21,14 @@
     "test:watch": {
       "cache": false,
       "persistent": true
+    },
+    "chromatic": {
+      "cache": false,
+      "persistent": true
+    },
+    "build:storybook": {
+      "dependsOn": ["^build:storybook"],
+      "outputs": ["storybook-static/**"]
     }
   }
 }

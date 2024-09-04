@@ -4,7 +4,12 @@ Run the following command:
 
 ```sh
 npm run dev
+npm run test
+npm run test:watch
 ```
+
+- Production: <a href="https://im-technicall-test.vercel.app/">Click here</a>
+- Library: <a href="https://www.chromatic.com/library?appId=66d7e18353e20384ca70416f">Click here</a>
 
 ## What's inside?
 

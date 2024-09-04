@@ -9,7 +9,9 @@
     "commit": "sui-mono commit",
     "test": "turbo test",
     "test:watch": "turbo test:watch",
-    "prepare": "husky"
+    "prepare": "husky",
+    "chromatic": "turbo chromatic",
+    "build-storybook": "turbo build-storybook"
   },
   "workspaces": [
     "im-main-project",
