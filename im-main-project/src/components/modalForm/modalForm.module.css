@@ -1,0 +1,59 @@
+.modalForm {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	border-radius: 8px;
+	background: var(--white);
+	padding: 15px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+}
+.modalForm.show {
+	display: block;
+}
+.modalForm.hidde {
+	display: none;
+}
+.modalForm h2 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.modalForm form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.flex__row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.button__container {
+	padding-top: 15px;
+	width: 100%;
+}
+.textarea {
+	border: var(--dark200) 2px solid;
+	width: 100%;
+	max-width: 390px;
+	border-radius: 4px;
+	height: 100px;
+	max-height: 400px;
+	padding: 10px;
+}
+.textarea:focus {
+	outline: none;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.container__textarea {
+	width: 100%;
+}

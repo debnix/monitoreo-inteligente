@@ -1,0 +1,16 @@
+:root {
+	/*  -------colors------ */
+	--white: #fff;
+	--dark200: #a8a6a6;
+	--dark500: #222222;
+	--danger400: #780909;
+	--success400: #0a530d;
+	--gray50: #d0d0d0;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}

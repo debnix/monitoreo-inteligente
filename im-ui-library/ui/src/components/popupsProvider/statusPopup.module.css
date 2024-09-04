@@ -1,0 +1,65 @@
+.basicPopup {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	background: #ffffff;
+	border-radius: 5px;
+	box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+	border: var(--dark500) 1px solid;
+	position: absolute;
+}
+.basicPopup.danger {
+	border: var(--danger400) 1px solid;
+}
+.basicPopup.success {
+	border: var(--success400) 1px solid;
+}
+.basicPopup:active {
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
+}
+.basicPopup:hover {
+	border: #e67403 solid 2px;
+	box-shadow: rgba(157, 83, 5, 0.24) 0px 5px 8px;
+}
+.header {
+	padding: 6px 10px;
+	padding-right: 18px;
+	position: relative;
+	cursor: grab;
+	border-bottom: var(--dark500) solid 1px;
+}
+.basicPopup.success .header {
+	border-bottom: var(--success400) solid 1px;
+	background: var(--success400);
+	color: var(--white);
+}
+.basicPopup.danger .header {
+	border-bottom: var(--danger400) solid 1px;
+	background: var(--danger400);
+	color: var(--white);
+}
+.basicPopup.danger:hover {
+	border: var(--danger400) solid 2px;
+	box-shadow: rgba(153, 3, 3, 0.24) 0px 5px 8px;
+}
+.basicPopup.success:hover {
+	border: var(--success400) solid 2px;
+	box-shadow: rgba(6, 159, 16, 0.24) 0px 5px 8px;
+}
+.header h3 {
+	font-size: 20px;
+	text-align: center;
+}
+.header:active {
+	cursor: grabbing;
+}
+.header .container_icon {
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	cursor: pointer;
+}
+.body {
+	padding: 10px;
+}

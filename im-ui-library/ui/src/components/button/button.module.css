@@ -1,0 +1,29 @@
+.button {
+	padding: 10px;
+	font-size: 15px;
+	border: none;
+	border-radius: 8px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.button.danger {
+	background: var(--danger400);
+	color: var(--white);
+}
+.button.danger:active {
+	border: var(--white) 1px solid;
+}
+.button.success {
+	background: var(--success400);
+	color: var(--white);
+}
+.button.success:active {
+	border: var(--white) 1px solid;
+}
+
+.button.sm {
+	width: 60px;
+}
+.button.md {
+	width: 100px;
+}

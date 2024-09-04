@@ -1,0 +1,26 @@
+:root {
+	/* Colors */
+	--white: #fff;
+	--light: #ede9e9;
+	--dark: #434748;
+	--dark200: #a8a6a6;
+	--dark500: #222222;
+	--danger300: #bc2a2a;
+	--danger400: #780909;
+	--success400: #0a530d;
+	--gray50: #d0d0d0;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	font-size: 14px;
+	background-color: var(--dark);
+}

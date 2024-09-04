@@ -7,7 +7,12 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "workspaces": [
+    "im-main-project",
+    "im-ui-library/*"
+  ],
   "devDependencies": {
+    "@s-ui/mono": "^2.45.0",
     "prettier": "^3.2.5",
     "turbo": "^2.1.1",
     "typescript": "^5.4.5"
@@ -15,9 +20,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "npm@9.6.4",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "packageManager": "npm@9.6.4"
 }

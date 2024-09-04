@@ -1,0 +1,39 @@
+.basicPopup {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+	border: var(--dark500) 1px solid;
+	position: absolute;
+}
+.basicPopup:active {
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
+}
+.basicPopup:hover {
+	border: #e67403 solid 2px;
+	box-shadow: rgba(157, 83, 5, 0.24) 0px 5px 8px;
+}
+.header {
+	padding: 10px;
+	padding-right: 18px;
+	position: relative;
+	cursor: grab;
+}
+.header h3 {
+	font-size: 22px;
+}
+.header:active {
+	cursor: grabbing;
+}
+.header .container_icon {
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	cursor: pointer;
+}
+.body {
+	padding: 10px;
+}
