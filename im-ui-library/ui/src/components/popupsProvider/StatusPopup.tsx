@@ -4,7 +4,7 @@ import styles from './statusPopup.module.css'
 import { PopupsProviderProps } from './PopupsProviderProps'
 import Close from '../icons/Close'
 
-type StatusType = 'danger' | 'success'
+type StatusType = 'danger' | 'blue'
 interface Props extends PopupsProviderProps {
 	status: StatusType
 }
@@ -24,7 +24,7 @@ const StatusPopup = (props: Props) => {
 
 	return (
 		<div
-			className={[styles.basicPopup, styles[props.status]].join(' ')}
+			className={[styles.statusPopup, styles[props.status]].join(' ')}
 			ref={props.refEl}
 			style={{ left: `${props.left}px`, top: `${props.top}px`, maxWidth: `${props.width}px` }}
 			onClick={handleClick}

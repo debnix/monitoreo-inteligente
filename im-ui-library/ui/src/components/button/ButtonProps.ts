@@ -1,5 +1,5 @@
 type ButtonType = 'submit' | 'button'
-type ColorType = 'success' | 'danger'
+type ColorType = 'blue' | 'danger' | 'white'
 type SizeType = 'sm' | 'md'
 
 export interface ButtonProps {
@@ -8,4 +8,5 @@ export interface ButtonProps {
   text: string
   size?: SizeType
   onClick: () => void
+  outline?: boolean
 }

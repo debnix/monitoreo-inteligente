@@ -13,17 +13,49 @@
 .button.danger:active {
 	border: var(--white) 1px solid;
 }
-.button.success {
-	background: var(--success400);
+.button.blue {
+	background: var(--blue400);
 	color: var(--white);
 }
 .button.success:active {
 	border: var(--white) 1px solid;
 }
-
+.button.white {
+	background: var(--white);
+	color: var(--black);
+}
+.button.white:active {
+	border: var(--white) 1px solid;
+}
 .button.sm {
 	width: 60px;
 }
 .button.md {
 	width: 100px;
+}
+
+/* ----Outline--- */
+.button.danger.outline {
+	background: transparent;
+	border: var(--danger400) 2px solid;
+	color: var(--danger400);
+}
+.button.danger.outline:active {
+	border: var(--danger400) 3px solid;
+}
+.button.blue.outline {
+	background: transparent;
+	border: var(--blue400) 2px solid;
+	color: var(--blue400);
+}
+.button.blue.outline:active {
+	border: var(--blue400) 3px solid;
+}
+.button.white.outline {
+	background: transparent;
+	border: var(--white) 2px solid;
+	color: var(--white);
+}
+.button.white.outline:active {
+	border: var(--white) 3px solid;
 }

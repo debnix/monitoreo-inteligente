@@ -1,4 +1,4 @@
-.basicPopup {
+.statusPopup {
 	width: 100%;
 	max-width: 300px;
 	height: auto;
@@ -8,20 +8,17 @@
 	border: var(--dark500) 1px solid;
 	position: absolute;
 }
-.basicPopup.danger {
+.statusPopup.danger {
 	border: var(--danger400) 1px solid;
 }
-.basicPopup.success {
-	border: var(--success400) 1px solid;
+.statusPopup.blue {
+	border: var(--blue400) 1px solid;
 }
-.basicPopup:active {
+.statusPopup:active {
 	transform: scale(1.1);
 	transition: transform 0.5s ease;
 }
-.basicPopup:hover {
-	border: #e67403 solid 2px;
-	box-shadow: rgba(157, 83, 5, 0.24) 0px 5px 8px;
-}
+
 .header {
 	padding: 6px 10px;
 	padding-right: 18px;
@@ -29,23 +26,23 @@
 	cursor: grab;
 	border-bottom: var(--dark500) solid 1px;
 }
-.basicPopup.success .header {
-	border-bottom: var(--success400) solid 1px;
-	background: var(--success400);
+.statusPopup.blue .header {
+	border-bottom: var(--blue400) solid 1px;
+	background: var(--blue400);
 	color: var(--white);
 }
-.basicPopup.danger .header {
+.statusPopup.danger .header {
 	border-bottom: var(--danger400) solid 1px;
 	background: var(--danger400);
 	color: var(--white);
 }
-.basicPopup.danger:hover {
+.statusPopup.danger:hover {
 	border: var(--danger400) solid 2px;
 	box-shadow: rgba(153, 3, 3, 0.24) 0px 5px 8px;
 }
-.basicPopup.success:hover {
+.statusPopup.blue:hover {
 	border: var(--success400) solid 2px;
-	box-shadow: rgba(6, 159, 16, 0.24) 0px 5px 8px;
+	box-shadow: rgba(14, 184, 240, 0.24) 0px 5px 8px;
 }
 .header h3 {
 	font-size: 20px;

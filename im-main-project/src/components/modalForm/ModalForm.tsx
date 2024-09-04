@@ -114,7 +114,7 @@ const ModalForm = (props: ModalFormProps) => {
 
 				<div className={[styles.flex__row, styles.button__container].join(' ')}>
 					<Button type="button" color="danger" onClick={props.onClose} text="Cerrar" />
-					<Button type="submit" color="success" onClick={() => {}} text="Save" />
+					<Button type="submit" color="blue" onClick={() => {}} text="Save" />
 				</div>
 			</form>
 		</section>

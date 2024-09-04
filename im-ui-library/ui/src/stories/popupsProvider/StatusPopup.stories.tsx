@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import StatusPopup from '../../components/popupsProvider/StatusPopup'
+import { createRef } from 'react'
 
 const meta = {
 	title: 'Components/PopupsProvider/StatusPopup',
@@ -9,8 +10,7 @@ const meta = {
 	},
 	argTypes: {
 		status: {
-			type: 'string',
-			options: ['danger', 'success'],
+			options: ['danger', 'blue'],
 			control: 'select'
 		}
 	}
@@ -19,16 +19,19 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
+const reference: React.RefObject<HTMLDivElement> = createRef()
 export const statusPopup: Story = {
 	args: {
 		title: 'My Status Popup',
 		children:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		let: 100,
+		left: 100,
 		top: 100,
 		width: 300,
 		height: 400,
 		status: 'danger',
-		onClose: () => {}
+		onClose: () => {},
+		id: 'item-1',
+		refEl: reference
 	}
 }

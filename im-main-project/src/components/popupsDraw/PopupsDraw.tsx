@@ -38,8 +38,8 @@ const PopupsDraw = () => {
 		<section role="popupDraw" className={styles.container}>
 			{/*  ------Controller to add and clear popups ------ */}
 			<section className={styles.container__controllers}>
-				<Button onClick={handleBtnA} text="Add A" type="button" color="success" />
-				<Button onClick={handleBtnB} text="Add B" type="button" color="success" />
+				<Button onClick={handleBtnA} text="Add A" type="button" color="white" outline={true} />
+				<Button onClick={handleBtnB} text="Add B" type="button" color="white" outline={true} />
 				<Button onClick={closeAll} text="Cerrar Todos" type="button" color="danger" />
 			</section>
 			{/* ------ Conten to move popups ------- */}
@@ -75,7 +75,7 @@ const PopupsDraw = () => {
 							onClose={closePopup}
 							onMouseDown={mouseDown}
 							onClick={onClickPopup}
-							status="success"
+							status="blue"
 						>
 							{item.content}
 						</StatusPopup>

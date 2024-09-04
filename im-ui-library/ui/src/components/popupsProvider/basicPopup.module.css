@@ -13,7 +13,7 @@
 	transition: transform 0.5s ease;
 }
 .basicPopup:hover {
-	border: #e67403 solid 2px;
+	border: var(--blue400) solid 2px;
 	box-shadow: rgba(157, 83, 5, 0.24) 0px 5px 8px;
 }
 .header {

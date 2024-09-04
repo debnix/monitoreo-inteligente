@@ -24,6 +24,7 @@ export const basicPopup: Story = {
 		width: 300,
 		height: 400,
 		onClose: () => {},
-		refEl: createRef()
+		refEl: createRef(),
+		id: 'item2'
 	}
 }

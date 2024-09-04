@@ -11,6 +11,13 @@ const meta = {
 		size: {
 			options: ['sm', 'md'],
 			control: 'select'
+		},
+		color: {
+			options: ['blue', 'danger', 'white'],
+			control: 'select'
+		},
+		outline: {
+			control: 'boolean'
 		}
 	}
 } satisfies Meta<typeof Button>
