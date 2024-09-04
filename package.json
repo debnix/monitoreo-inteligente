@@ -10,7 +10,7 @@
     "test": "turbo test",
     "test:watch": "turbo test:watch",
     "prepare": "husky",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "turbo chromatic"
   },
   "workspaces": [
     "im-main-project",

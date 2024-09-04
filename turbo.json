@@ -21,6 +21,10 @@
     "test:watch": {
       "cache": false,
       "persistent": true
+    },
+    "chromatic": {
+      "cache": false,
+      "persistent": true
     }
   }
 }
