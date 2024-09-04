@@ -26,9 +26,9 @@
       "cache": false,
       "persistent": true
     },
-    "build-storybook": {
-      "cache": false,
-      "persistent": true
+    "build:storybook": {
+      "dependsOn": ["^build:storybook"],
+      "outputs": ["storybook-static/**"]
     }
   }
 }

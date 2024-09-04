@@ -14,7 +14,7 @@
     "start": "storybook start",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "npx chromatic --project-token=chpt_bd71729fefff42d"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.8.0",
