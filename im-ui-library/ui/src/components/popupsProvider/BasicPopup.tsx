@@ -5,6 +5,8 @@ import { PopupsProviderProps } from './PopupsProviderProps'
 import Close from '../icons/Close'
 
 const BasicPopup = (props: PopupsProviderProps) => {
+	console.log('render basic popups')
+
 	const handleClick = () => {
 		if (props?.onClick) {
 			props?.onClick(props.refEl)

@@ -1,4 +1,5 @@
-type PopupType = 'A' | 'B'
+export type PopupType = 'A' | 'B'
+
 export interface ItemPopup {
   id: string
   position: Position

@@ -4,7 +4,6 @@ import { initializerPopups } from '../data/initializerPopups'
 
 const usePopups = () => {
 	const [itemsPopups, setItemsPopups] = useState<ItemPopup[]>(initializerPopups)
-	//Save reference
 	const itemsRef = useRef(itemsPopups)
 
 	const addPopup = useCallback((newPopup: ItemPopup) => {
