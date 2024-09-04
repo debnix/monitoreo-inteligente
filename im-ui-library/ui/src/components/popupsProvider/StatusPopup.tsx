@@ -31,7 +31,7 @@ const StatusPopup = (props: Props) => {
 		>
 			<section className={styles.header} onMouseDown={handleMouseDown}>
 				<h3>{props.title}</h3>
-				<div className={styles.container_icon} onClick={() => props.onClose(props.refEl)}>
+				<div className={styles.container_icon} onClick={() => props.onClose(props.id)}>
 					<Close color="#000" height={12} width={12} />
 				</div>
 			</section>

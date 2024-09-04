@@ -11,8 +11,8 @@ const usePopups = () => {
 		itemsRef.current = [...itemsRef.current, newPopup]
 	}, [])
 
-	const closePopup = useCallback((element: React.RefObject<HTMLDivElement>) => {
-		const newElements = itemsRef.current.filter((item) => item.elementRef !== element)
+	const closePopup = useCallback((id: string) => {
+		const newElements = itemsRef.current.filter((item) => item.id !== id)
 		setItemsPopups(newElements)
 		itemsRef.current = newElements
 	}, [])

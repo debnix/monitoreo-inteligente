@@ -10,10 +10,11 @@
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build-storybook": "storybook build",
     "start": "storybook start",
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "chromatic": "npx chromatic --project-token=chpt_bd71729fefff42d"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.8.0",
@@ -32,6 +33,7 @@
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "chromatic": "^11.7.1",
     "eslint": "^8.57.0",
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^8.2.9",

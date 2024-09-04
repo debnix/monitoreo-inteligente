@@ -18,7 +18,7 @@ const ModalForm = (props: ModalFormProps) => {
 	const [formState, setFormState] = useState<FormPopup>(initForm)
 
 	useEffect(() => {
-		setFormState({ ...formState, id: crypto.randomUUID() })
+		setFormState({ ...formState, id: globalThis.crypto.randomUUID() })
 	}, [props.show])
 
 	/* -----Event handles--- */

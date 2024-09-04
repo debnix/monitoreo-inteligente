@@ -6,7 +6,9 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "commit": "sui-mono commit"
+    "commit": "sui-mono commit",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch"
   },
   "workspaces": [
     "im-main-project",
@@ -14,6 +16,11 @@
   ],
   "devDependencies": {
     "@s-ui/mono": "^2.45.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.2.5",
     "turbo": "^2.1.1",
     "typescript": "^5.4.5"

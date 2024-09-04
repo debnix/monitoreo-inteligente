@@ -35,7 +35,7 @@ const PopupsDraw = () => {
 	}
 
 	return (
-		<section className={styles.container}>
+		<section role="popupDraw" className={styles.container}>
 			{/*  ------Controller to add and clear popups ------ */}
 			<section className={styles.container__controllers}>
 				<Button onClick={handleBtnA} text="Add A" type="button" color="success" />
@@ -48,6 +48,7 @@ const PopupsDraw = () => {
 					item.popupType === 'A' ? (
 						<Suspense fallback={<div>loading...</div>} key={item.id}>
 							<BasicPopup
+								id={item.id}
 								title={item.title}
 								refEl={item.elementRef}
 								height={item.position.height}
@@ -64,6 +65,7 @@ const PopupsDraw = () => {
 					) : (
 						<StatusPopup
 							key={item.id}
+							id={item.id}
 							title={item.title}
 							refEl={item.elementRef}
 							height={item.position.height}
