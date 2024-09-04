@@ -10,7 +10,8 @@
     "test": "turbo test",
     "test:watch": "turbo test:watch",
     "prepare": "husky",
-    "chromatic": "turbo chromatic"
+    "chromatic": "turbo chromatic",
+    "build-storybook": "turbo build-storybook"
   },
   "workspaces": [
     "im-main-project",

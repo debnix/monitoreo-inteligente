@@ -25,6 +25,10 @@
     "chromatic": {
       "cache": false,
       "persistent": true
+    },
+    "build-storybook": {
+      "cache": false,
+      "persistent": true
     }
   }
 }
